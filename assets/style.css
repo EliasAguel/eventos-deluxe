@@ -1,0 +1,414 @@
+
+/*------------------------------------comienzo reseteo------------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  /*------------------------------------fin reseteo------------------------------------*/
+
+
+.eventos-principales {
+    list-style: none;
+    text-decoration: none;
+}
+.eventos-principales button {
+    text-decoration: none;
+    background-color: none;
+    border: none;
+}
+
+.eventos-principales button:hover {
+    text-decoration: underline;
+}
+
+
+
+.header {
+    background: rgb(245,28,145);
+    background: linear-gradient(90deg, rgba(245,28,145,1) 0%, rgba(222,118,207,1) 28%, rgba(233,198,155,1) 73%, rgba(241,192,125,1) 92%, rgba(242,193,121,1) 93%, rgba(246,202,90,1) 100%);
+    background-size: 300% 300%;
+    animation: color 8s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.listaHeader {
+    display: block;
+    width: 82%;
+    border-bottom: 25px solid white ;
+    border-bottom-right-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.encabezado {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.lista {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    margin: 0;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
+    transition: all 1s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-style: italic;
+    font-weight:thin;
+}
+
+.titulo {
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 60px;
+    animation: titulo 30s ease-in-out infinite;
+}
+
+.titulo2 {
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 45px;
+}
+
+.texto {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+}
+
+.lista a:hover {
+    color:thistle;
+    text-decoration: underline;
+}
+
+.listasObjetos1 {
+    padding-left: 0px ;
+}
+
+.listasObjetos {
+    padding-left: 20px;
+}
+
+.buscador {
+    padding: 10px;
+    width: 20%;
+}
+
+
+
+.icono {
+    color: black;
+    margin: 10px;
+    
+}
+
+i {
+    font-size: 40px;
+    transition: all 1s;
+}
+
+.footer {
+    background: rgb(245,28,145);
+    background: linear-gradient(90deg, rgba(245,28,145,1) 0%, rgba(222,118,207,1) 28%, rgba(233,198,155,1) 73%, rgba(241,192,125,1) 92%, rgba(242,193,121,1) 93%, rgba(246,202,90,1) 100%);
+    background-size: 300% 300%;
+    height: 150px;
+    padding: 1px;
+    animation: color 8s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icono-div {
+    border-bottom: 1px solid black;
+    display: inline-block;
+}
+
+.derechos {
+    color: black;
+    display:inline-block;
+    height:max-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+i:hover {
+    color: thistle;
+    transform: scale(1.2);
+}
+
+
+
+@keyframes titulo {
+    0%{
+        background-position: 0 5%;
+        color: #5d0050;
+    }
+    5%{
+        background-position: 5% 10%;
+        color: #a8298a;
+    }
+    10%{
+        background-position: 10% 15%;
+        color: #e049aa;
+    }
+    15%{
+        background-position: 15%  20%;
+        color: #e886cf;
+    }
+    20%{
+        background-position: 20%  25%;
+        color: #f2a4e2;
+    }
+    25%{
+        background-position: 25%  30%;
+        color: #ecb7ad;
+    }
+    30%{
+        background-position: 30%  35%;
+        color:#ec9672;
+    }
+    35%{
+        background-position: 35%  40%;
+     color: #f2955a;
+    }
+    40%{
+        background-position: 40%  45%;
+     color: #f7b146;
+    }
+    45%{
+        background-position: 45%  50%;
+        color: #f4a83a;
+    }
+    50%{
+        background-position: 50% 55%;
+        color: #f9b002;
+    }
+    55%{
+        background-position: 55%  60%;
+        color: #f4a83a;
+    }
+    60%{
+        background-position: 60%  65%;
+     color: #f7b146;
+    }
+    65%{
+        background-position: 65%  70%;
+     color: #f2955a;
+    }
+    70%{
+        background-position: 70%  75%;
+        color:#ec9672;
+    }
+    75%{
+        background-position: 75%  80%;
+        color: #ecb7ad;
+    }
+    80%{
+        background-position: 80%   85%;
+        color: #f2a4e2;
+    }
+    
+    85%{
+        background-position: 85%  90%;
+        color: #e886cf;
+    }
+    90%{
+        background-position: 90% 95%;
+        color: #e049aa;
+    }
+    95%{
+    
+        background-position: 95% 100%;
+        color: #a8298a;
+    }
+    100%{
+        background-position: 100% 0%;
+        color: #5d0050;
+    }
+}
+
+.enviar {
+    background: rgb(246,202,90);
+    background: linear-gradient(90deg, rgba(246,202,90,1) 0%, rgba(242,193,121,1) 7%, rgba(241,192,125,1) 9%, rgba(233,198,153,1) 27%, rgba(222,118,207,1) 72%, rgba(245,28,145,1) 100%);
+    background-size: 300% 300%;
+    padding: 3px;
+    animation: enviar 8s ease-in-out infinite;
+    width: 60%;
+    border-radius: 5px;
+}
+
+
+
+@keyframes enviar{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
+
+.contactar {
+    width: 70%;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.datos-correo {
+    width: 60%;
+}
+
+.datos-mensaje {
+    width: 60%;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.eventos-plus {
+    border: none;
+    text-decoration: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 200;
+    color: black;
+    margin-left: 10px;
+}
+
+.eventos-plus:hover {
+    background: rgb(245,28,145);
+    background: linear-gradient(90deg, rgba(245,28,145,1) 0%, rgba(222,118,207,1) 28%, rgba(233,198,155,1) 73%, rgba(241,192,125,1) 92%, rgba(242,193,121,1) 93%, rgba(246,202,90,1) 100%);
+    background-size: 300% 300%;
+    padding: 4px;
+    animation: btn 8s ease-in-out infinite;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+@keyframes btn{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.input-nombre {
+    border: 2px solid rgba(222,118,207,1);
+}
+.input-apellido {
+    border: 2px solid rgba(222,118,207,1);
+}
+.input-correo {
+    border: 2px solid rgba(245,28,145,1);
+}
+.input-mensaje {
+    border: 2px solid rgba(245,28,145,1);
+}
+
+label {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    color: rgb(116, 116, 116);
+    font-size: 20px;
+}
+
+
+
+
+.ventana {
+    position: fixed; /* Posición fija */
+    z-index: 1; /* Se situará por encima de otros elementos de la página*/
+    padding-top: 200px; /* El contenido estará situado a 200px de la parte superior */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+}
+
+.ventanaContenido {
+    position: relative; /* Relativo con respecto al contenedor -modal- */
+    background-color: white;
+    margin: auto; /* Centrada */
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+}
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  @keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.btn-compra {
+    margin: 15px;
+}
